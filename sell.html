@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Sell cars | Home</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="./index.html">
+                <img class="logo" src="./images/logo.png" alt="">
+            </a>
+            <div class="nav-links">
+                <a href="./index.html">
+                    <span>Home</span>
+                </a>
+                <a href="./automatic.html">
+                    <span>Automatic</span>
+                </a>
+                <a href="./manual.html">
+                    <span>Manual</span>
+                </a>
+                <a href="./sell.html">
+                    <span class="main-nav">Sell Cars</span>
+                </a>
+                <a href="./about.html">
+                    <span>About Us</span>
+                </a>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">User</button>
+                <div class="dropdown-content">
+                    <a href="./view_profile.html">View Profile</a>
+                    <a href="./edit_profile.html">Edit Profile</a>
+                    <a href="./login.html">LogOut</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="heading">
+        <h1>Sell Your Car</h1>
+    </div>
+
+    <form action="" class="sell-form">
+        <div class="div1">
+            <label for="fname">Car Name:</label><br>
+            <input type="text" id="fname" name="fname" value=""><br><br>
+            <label for="lname">Company Name:</label><br>
+            <input type="text" id="lname" name="lname" value=""><br><br>
+            <label for="lname">Model Year:</label><br>
+            <input type="text" id="lname" name="lname" value=""><br><br>
+            <label for="lname">Color:</label><br>
+            <input type="text" id="lname" name="lname"><br><br>
+            <div class="radio">
+                <input type="radio" id="html" name="fav_language" value="HTML">
+                <label for="html">Automatic</label><br>
+                <input type="radio" id="css" name="fav_language" value="CSS">
+                <label for="css">Manual</label><br>
+            </div><br>
+        </div>
+        <div class="div2">
+            <label for="lname">Price:</label><br>
+            <input type="text" id="lname" name="lname"><br><br>
+            <label for="lname">Address:</label><br>
+            <input type="text" id="lname" name="lname"><br><br>
+            <label for="lname">Contact No:</label><br>
+            <input type="text" id="lname" name="lname"><br><br>
+            <label for="img">Select vehicle image:</label>
+            <input class="form-img" type="file" id="img" name="img" accept="image/*">
+            <input class="form-btn" type="submit" value="Submit">
+            <input class="form-btn" type="reset" value="Reset">
+        </div>
+    </form>
+    <footer>
+        <div class="footer-background">
+            <span>Connect with us:
+            </span>
+            <span>Phone: +807 357 1010</span>
+            <span>Email: Cibin@gmail.com</span>
+            <span>
+                Copyright &copy; https://github.com/Cibincyriac
+            </span>
+        </div>
+    </footer>
+    <script>
+        if (window.confirm('Subscription needed!')) {
+
+        }
+        else {
+            window.location = './index.html';
+        }
+    </script>
+</body>
+
+</html>

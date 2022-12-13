@@ -1,0 +1,61 @@
+
+<html>
+<head>
+<title></title>
+<link rel ="stylesheet" type="text/css" href="style2.css"> 
+<script>  
+function validate(){
+	var pass=document.regitr.pw.value;
+	var repass=document.regitr.rpw.value;
+	if(pass!=repass){
+		alert("password not match");
+		return false;
+	}
+}
+</script>
+</head>
+
+	<body>
+
+	<form name="regitr" action="login.html" autocomplete="off" method="POST" enctype="multipart/form-data" onsubmit="return validate()" > 
+	<div class="reg"> 
+<table>	    
+<caption>REGISTRATION</caption>
+		<tr>	        
+		<td>USERNAME:</td>	        
+		<td><input type="text" name="txtsname" required></td>	    
+		</tr>      
+				<tr>	        
+				<td>E-MAIL:</td>	        
+				<td><input type="email" name="mail" required></td>	    
+				</tr>  
+		<tr>	        
+		<td>PHONE:</td>	        
+		<td><input type="bigint" name="ph" required></td>	    
+		</tr>  
+				<tr>	        
+				<td>ADDRESS:</td>	        
+				<td><input type="text" name="addr" required></td>	    
+				</tr>  
+		<tr>	        
+		<td>PASSWORD:</td>	        
+		<td><input type="password" name="pw" placeholder="New password"  required></td>	    
+		</tr>   	
+				<tr>	        
+				<td>RE-PASSWORD:</td>	        
+				<td><input type="Password" name="rpw" placeholder="RE-ENTER"  required></td>	    
+				</tr>
+		<tr>	        
+		<td></td>	        
+		<td align="center"><button style="background-color:gray;color:white" type="submit" > SAVE</button></td>	    
+		</tr> 
+				<tr>	        
+				<td></td>	        
+				<td align="left">Already a member? <a href="login.html">sign in</a></td>	    
+				</tr>
+</form>				
+</table>
+
+</div> 	
+</body>
+</html>
